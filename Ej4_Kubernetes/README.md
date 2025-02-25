@@ -22,6 +22,12 @@ The application consists of two main services:
 
 The following Kubernetes commands were used:
 
+### Images:
+after building the image on Docker, load it in minikube
+    ```bash
+    minikube image load my-fastapi:v2
+    ```
+    
 ### Deployments & Services
 
 * **Deleting Deployments:**
@@ -93,6 +99,7 @@ The following Kubernetes commands were used:
     ```bash
     kubectl logs backend-deployment-6f76f5dd54-wzb9h
     ```
+
 
 ### Errors
 
