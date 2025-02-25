@@ -17,6 +17,21 @@ The application consists of two main services:
 * A simple web interface that interacts with the backend API.
 * Containerized separately.
 
+## Installation and Running the Application:
+
+1.  **Start the Local Kubernetes Environment:**
+    * Begin by launching Minikube, a tool that creates a small, local Kubernetes cluster.
+
+2.  **Deploy the Application to Kubernetes:**
+    * Next, apply the Kubernetes configuration files in the specified order to deploy the backend and frontend services and their respective service definitions. This effectively tells Kubernetes to create the necessary components.
+
+3.  **Verify the Application is Running:**
+    * Check the status of the running application components (pods) and services within Kubernetes to ensure everything is operating correctly.
+
+4.  **Access the Frontend:**
+    * Retrieve the web address (URL) of the frontend service from Minikube.
+    * Open this URL in a web browser to view and interact with the application's user interface.
+  
 
 ## Kubernetes Operations
 
