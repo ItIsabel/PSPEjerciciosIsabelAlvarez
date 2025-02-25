@@ -34,6 +34,7 @@ The following Kubernetes commands were used:
 * **Creating Deployments:**
 
     ```bash
+    kubectl apply -f backend-deployment.yaml
     kubectl apply -f frontend-deployment.yaml
     ```
 
@@ -98,5 +99,8 @@ The following Kubernetes commands were used:
 * **ImagePullBackOff:**
 
     * This error typically indicates an issue with pulling the container image.
-    * Solution: Ensure you are logged into your container registry (`docker login`).
- kubectl port-forward service/frontend-service 3000:80
+    * Solution: log into the container registry (`docker login`).
+
+### Other:
+expose kubernetes service port from localhost:
+*  kubectl port-forward service/frontend-service 3000:80
